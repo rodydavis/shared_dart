@@ -4,7 +4,6 @@ A new Flutter project.
 
 ## Screenshots
 
-![](/doc/images/1.png)
 ![](/doc/images/2.png)
 ![](/doc/images/3.png)
 ![](/doc/images/4.png)
