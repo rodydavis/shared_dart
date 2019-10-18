@@ -4,7 +4,7 @@ import 'dart:async';
 // import 'package:http/http.dart' as http;
 import 'package:shelf/shelf.dart' as shelf;
 
-import 'handlers/index.dart';
+import 'controllers/index.dart';
 import 'result.dart';
 
 class RouteUtils {
@@ -23,6 +23,7 @@ class RouteUtils {
         "status": "ok",
       }).ok(),
       'counter': CounterController().result(request),
+      'todos': TodoController().result(request),
     };
   }
 }

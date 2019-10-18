@@ -8,16 +8,16 @@ class CounterController implements ResponseImpl {
 
   @override
   Future<shelf.Response> result(shelf.Request request) async {
-    final _counterModel = CounterModel();
+    final _model = CounterModel();
     final _params = request.url.queryParameters;
     if (_params != null) {
       final _val = int.tryParse(_params['count'] ?? '0');
-      _counterModel.set(_val);
+      _model.set(_val);
     } else {
-      _counterModel.add();
+      _model.add();
     }
     return ServerResponse('Info', body: {
-      "counter": _counterModel.count,
+      "counter": _model.count,
     }).ok();
   }
 }
