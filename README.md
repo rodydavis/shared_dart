@@ -1,6 +1,8 @@
 # shared_dart
 
-A new Flutter project.
+A single Flutter project to rule them all.
+
+Server and Client in one project.
 
 ## Screenshots
 
