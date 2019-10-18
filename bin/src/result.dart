@@ -36,3 +36,7 @@ class ServerResponse {
 }
 
 enum StatusType { success, error }
+
+abstract class ResponseImpl {
+  Future<shelf.Response> result(shelf.Request request);
+}
