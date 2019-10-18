@@ -1,0 +1,13 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: shared-dart
+  namespace: default
+spec:
+  template:
+    spec:
+      containers:
+        - image: docker.io/rodydavis/shared-dart
+          env:
+            - name: TARGET
+              value: "Shared Dart v1"
