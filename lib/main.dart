@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
 
+import 'plugins/desktop/desktop.dart';
 import 'ui/home/screen.dart';
 
-void main() => runApp(MyApp());
+void main() {
+  setTargetPlatformForDesktop();
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
   @override
